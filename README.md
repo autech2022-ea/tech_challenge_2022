@@ -10,7 +10,8 @@ The solution for this technical assigment is divided into three main deliverable
 1. Script to make inference on a single image or all the images inside a directory
 1. Script to run the training
 1. Google colab notebook with a deeper explanation on the model design. 
-The training process can also be executed from there.
+The training process can also be executed from there. 
+[Notebook URL](https://github.com/autech2022-ea/tech_challenge_2022/blob/main/BriefExplanationAndDriver.ipynb)
 
 ## Summary of the design 
 
@@ -21,8 +22,7 @@ The training process can also be executed from there.
 - The backbone can be selected when running `train.py` or `infer.py`
 - Some data augmentations are standard from PyTorch vision, and other are hand-crafted for more flexibility
 - A google colab notebook is also included, explaining some of the steps taken, and including some
-  visualizations. 
-
+  visualizations. [Notebook URL](https://github.com/autech2022-ea/tech_challenge_2022/blob/main/BriefExplanationAndDriver.ipynb)
 
 
 ## Installation
