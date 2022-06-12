@@ -43,6 +43,7 @@ def infer_single_image(model, image_location, transform_val):
         img = img.cpu()
     else:
         img = img.cuda()
+        model = model.cuda()
 
     # 3. Run the NN and read the output
     out = model(img).data.cpu().numpy()[0]

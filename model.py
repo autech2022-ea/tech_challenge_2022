@@ -15,7 +15,7 @@ def create_model(model_name="resnet34", num_classes=3):
         model = torchvision.models.resnet18(pretrained=True)
         model.fc = nn.Linear(512, num_classes)
     elif model_name == "resnet34":
-        model = torchvision.models.resnet34(pretrained=False)
+        model = torchvision.models.resnet34(pretrained=True)
         model.fc = nn.Linear(512, num_classes)
     elif model_name == "resnet50":
         model = torchvision.models.resnet50(pretrained=True)
