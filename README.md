@@ -285,7 +285,11 @@ TEST_SET Metrics = {'test_loss': 1.180214524269104, 'test_acc': 0.44578313827514
 
 ## Colab notebook
 
-WIP
+The colab notebook [URL](https://github.com/autech2022-ea/tech_challenge_2022/blob/main/BriefExplanationAndDriver.ipynb)
+includes some data exploration and some explanation of a few design elements.
+After that, includes the code to run the `infer.py` and `train.py` scripts.
+Using the tensorboard plugin, you can monitor the progress of a training
+execution in real time.
 
 # Final notes, ideas to improve
 
