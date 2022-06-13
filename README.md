@@ -24,6 +24,30 @@ The training process can also be executed from there.
 - A google colab notebook is also included, explaining some of the steps taken, and including some
   visualizations. [Notebook URL](https://github.com/autech2022-ea/tech_challenge_2022/blob/main/BriefExplanationAndDriver.ipynb)
 
+## Experimental results
+
+For the training, I split the dataset into 85%/15%. After training, the best model
+was also tested on a totally separate test set that I created manually. This test
+set is more difficult in general, and it naturally comes from another distribution
+(as I manually did screenshots from different websites).
+
+These are the experimental results on three of the backbones that I tested the
+most during this time:
+
+|               | Validation Set Accuracy | Test Set Accuracy |
+|---------------|-------------------------|-------------------|
+| Resnet18      | 0.93                    | 0.75              |
+| Resnet34      | **0.96**                | 0.77              |
+| Convnext_tiny | 0.92                   | **0.84**          |
+
+We can see Resnet34 has the best performance on validation set. It is, however
+Convnext_tiny the backbone that performed better on the test set. On the flipside,
+Convnext_tiny is almost two times larger in parameters, and hence the inference and training
+time are also higher than Resnet34.
+
+I do not have the exact numbers, but ViT did not perform as well as 
+the reported backbones. I assume it is because even when pretrained,
+ViT usually require more data points to have a good performance.
 
 ## Installation
 
